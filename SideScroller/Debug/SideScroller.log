@@ -1,0 +1,4 @@
+﻿  Enemy.cpp
+c:\users\anton_shamin\source\repos\sidescroller\sidescroller\enemy.cpp(43): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\anton_shamin\source\repos\sidescroller\sidescroller\enemy.cpp(48): warning C4018: <: несоответствие типов со знаком и без знака
+  SideScroller.vcxproj -> C:\Users\anton_shamin\source\repos\SideScroller\Debug\SideScroller.exe
