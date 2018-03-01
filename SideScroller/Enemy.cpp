@@ -32,7 +32,7 @@ SDL_Rect* Enemy::GetRect()
 
 void Enemy::Move(std::vector< std::vector<int> > &map)
 {
-	int start, end;
+	/*int start, end;
 	start = (baseclass::coord.x - (baseclass::coord.x
 		% baseclass::TILE_SIZE)) / baseclass::TILE_SIZE - 2;
 	end = (baseclass::coord.x + baseclass::coord.w
@@ -41,12 +41,12 @@ void Enemy::Move(std::vector< std::vector<int> > &map)
 	if (start < 0)
 		start = 0;
 	if (end > map[0].size())
-		end = map[0].size();
+		end = map[0].size();*/
 
 	bool nc = false;
 
 	for (int i = 0; i<map.size(); i++)
-		for (int j = start; j < end; j++)
+		for (int j = 0; j < map[0].size(); j++)
 		{
 			if (map[i][j] == 0)
 				continue;
@@ -59,13 +59,9 @@ void Enemy::Move(std::vector< std::vector<int> > &map)
 					yvel = 0;
 					nc = 1;
 				}
-				else if (destrect.y + destrect.h <= box.y + 11)
-				{
-					xvel = -xvel;
-				}
 
-				if (box.x + box.w >= destrect.x - 5 && box.y + box.h >= destrect.y + 6
-					&& box.x <= destrect.x+5)
+				if ((box.x + box.w >= destrect.x - 5 || box.x <= destrect.x + 5)
+					&& box.y + box.h >= destrect.y + 6)
 				{
 					xvel = -xvel;
 				}

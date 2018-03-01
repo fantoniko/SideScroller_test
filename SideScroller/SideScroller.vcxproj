@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Users\anton_shamin\source\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\anton_shamin\source\SDL_2_new\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\anton_shamin\source\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Users\anton_shamin\source\SDL2\include;$(IncludePath)</IncludePath>
